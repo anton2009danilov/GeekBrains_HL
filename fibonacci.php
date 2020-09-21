@@ -26,6 +26,7 @@ function fibonacci() {
 
     while ($num < 10) {
         if ($num === 2) {
+            // Поставил рекурсию, чтобы увеличить объём используемой памяти
             req(1);
         }
         $log->debug('номер итерации: '.$num);
@@ -51,7 +52,7 @@ fibonacci();
 
 function req($counter){
     if($counter > 100) {
-        echo 2;
+//        echo 2;
         return true;
     }
 
@@ -62,7 +63,7 @@ function req($counter){
         $log->debug("Объём используемой памяти: " . memory_get_usage());
     }
 
-    echo 1;
+//    echo 1;
     $counter++;
     req($counter);
 }
