@@ -1,9 +1,24 @@
 <?php
-session_start();
-$_SESSION['user1'] = 'USER_NAME_111';
-var_dump($_SESSION);
-?>
+//require_once ('vendor/autoload.php');
+//    var_dump(phpinfo());
 
+    session_start();
+
+    $_SESSION['user1'] = 'USER_NAME_113';
+
+    var_dump($_SESSION);
+
+//    $cache = new Memcached();
+//    $cache->addServer('192.168.56.103', 11211);
+//    $cache->addServer('localhost', 11211);
+//    $cache->set('id', '1');
+
+    var_dump($cache->get('id'));
+    var_dump($cache->get('id2'));
+
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,7 +29,6 @@ var_dump($_SESSION);
     <title>1mysite</title>
 </head>
 <body>
-<h1>mysite1.local</h1>
-
+    <h1>mysite1.local</h1>
 </body>
 </html>
