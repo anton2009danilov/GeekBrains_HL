@@ -5,17 +5,6 @@
     $_SESSION['user2'] = 'USER_NAME_222';
     var_dump($_SESSION);
 
-//    var_dump($_SESSION);
-
-//    $cache = new Memcached();
-//    $cache->addServer('192.168.56.103', 11211);
-//    $cache->addServer('localhost', 11211);
-//    $cache->set('id2', '2');
-
-//    var_dump($cache->get('id'));
-//    var_dump($cache->get('id2'));
-
-
 
 ?>
 <!doctype html>
